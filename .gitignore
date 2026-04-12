@@ -1,0 +1,5 @@
+.DS_Store
+._*
+.cursor/
+_backup_v1/
+node_modules/

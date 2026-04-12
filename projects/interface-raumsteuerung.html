@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Interface Design – Rafael Balle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Interface design for room controls – a university project by Rafael Balle."
+    />
+    <link rel="icon" href="../favico.svg" type="image/svg+xml" />
+    <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t){var m=document.cookie.match(/(?:^|;\s*)theme=(light|dark)/);if(m)t=m[1]}if(t)document.documentElement.setAttribute("data-theme",t);var l;try{l=localStorage.getItem("lang")}catch(e){}l=l||"en";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l})()</script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="page--home">
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+    <div class="frame frame--home">
+      <header class="header header--home">
+        <nav class="nav">
+          <a href="../index.html" data-text="home">home</a>
+          <a href="../about.html" data-text="about">about</a>
+          <a href="../projects.html" data-text="projects" aria-current="page">projects</a>
+        </nav>
+        <div class="header-controls">
+          <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+            <span class="lang-opt" data-lang="de">de</span>
+            <span class="lang-sep">/</span>
+            <span class="lang-opt" data-lang="en">en</span>
+          </button>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18" fill="currentColor"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="detail detail--four-col">
+        <div class="detail-grid">
+          <div class="detail-lead-block">
+            <div class="detail-hero-stack">
+              <div class="detail-hero">
+                <h1 lang="en">Interface design – room controller</h1>
+                <h1 lang="de">Interface Design – Raumsteuerung</h1>
+                <p class="detail-lead" lang="en">
+                  Redesigning room controls for university spaces – from user journey
+                  to e-ink interface.
+                </p>
+                <p class="detail-lead" lang="de">
+                  Neugestaltung der Raumsteuerung für Hochschulräume – von der
+                  User-Journey bis zum E‑Ink Interface.
+                </p>
+              </div>
+              <div class="detail-intro-row">
+                <div class="detail-intro detail-intro--left">
+                  <h3 class="detail-label" lang="en">project</h3>
+                  <h3 class="detail-label" lang="de">projekt</h3>
+                  <ul class="detail-facts">
+                    <li lang="en">interface design</li>
+                    <li lang="de">Interface Design</li>
+                    <li lang="en">4th semester</li>
+                    <li lang="de">4. Semester</li>
+                    <li lang="en">one-week intensive seminar</li>
+                    <li lang="de">einwöchiges Blockseminar</li>
+                    <li lang="en">group project</li>
+                    <li lang="de">Gruppenprojekt</li>
+                  </ul>
+                </div>
+                <div class="detail-intro detail-intro--right">
+                  <h3 class="detail-label" lang="en">team partners</h3>
+                  <h3 class="detail-label" lang="de">Teampartner</h3>
+                  <p class="detail-partners">
+                    <a href="https://www.linkedin.com/in/jakob-kuner-2166b4355/" target="_blank" rel="noreferrer">Jakob Kuner</a><br />
+                    <a href="https://www.linkedin.com/in/levi-sonnentag-816b82254/" target="_blank" rel="noreferrer">Levi Sonnentag</a><br />
+                    <a href="https://www.linkedin.com/in/judith-berger-1286aa209/" target="_blank" rel="noreferrer">Judith Berger</a>
+                  </p>
+                </div>
+              </div>
+              <div class="detail-project-role">
+                <h3 class="detail-label" lang="en">role in the project</h3>
+                <h3 class="detail-label" lang="de">Rolle im Projekt</h3>
+                <p class="detail-role-text" lang="en">
+                  My focus was on the CAD model of the interface, renderings, and the
+                  UI layout. The course was structured as a compact design sprint and
+                  gave me an insight into interface and interaction design.
+                </p>
+                <p class="detail-role-text" lang="de">
+                  Meine Schwerpunkte lagen im CAD‑Modell des Interfaces, den
+                  Renderings und dem Layout des Userinterfaces. Der Kurs war wie ein
+                  kompakter Designsprint angelegt und gab mir einen Einblick in
+                  Interface‑ und Interaktionsdesign.
+                </p>
+              </div>
+            </div>
+
+            <section class="detail-body">
+          <h3 lang="en">Context</h3>
+          <h3 lang="de">Kontext</h3>
+          <p lang="en">
+            In a one-week intensive seminar, we reimagined the room controls
+            at HfG Schwäbisch Gmünd. Our goal was to make lighting, heating,
+            and other functions more accessible, clearer, and user-friendly.
+          </p>
+          <p lang="de">
+            In einem einwöchigen Blockseminar haben wir die Steuerung der Räume
+            an der HfG Schwäbisch Gmünd neu gedacht. Unser Ziel war es, Licht,
+            Heizung und weitere Funktionen zugänglicher, klarer und
+            bedienungsfreundlicher zu machen.
+          </p>
+            </section>
+          </div>
+
+          <figure class="detail-media detail-media--hero">
+            <img src="../pictures-projects/raumsteuerung/keyframe.jpg" alt="Raumsteuerung Keyframe" />
+          </figure>
+
+          <!-- User Journey text (col 1-2) beside image (col 3-4) -->
+          <section class="detail-body detail-body--beside-img">
+            <h3>User journey</h3>
+            <p lang="en">
+              We started by analysing the key functions from both "admin level"
+              and "user level" perspectives. User journeys revealed pain points,
+              such as system entry, unclear states, and the distribution of
+              functions.
+            </p>
+            <p lang="de">
+              Zu Beginn analysierten wir die wichtigsten Funktionen aus Sicht von
+              „Adminebene" und „Userebene". Über User-Journeys wurden Painpoints
+              sichtbar, zum Beispiel der Einstieg in das System, unklare
+              Zustände und die Verteilung von Funktionen.
+            </p>
+          </section>
+
+          <figure class="detail-media detail-media--mid">
+            <img src="../pictures-projects/raumsteuerung/user%20journey.jpg" alt="User Journey Diagramm" />
+          </figure>
+
+          <!-- Interface & Interaction text (col 1-2) -->
+          <section class="detail-body detail-body--interface">
+            <h3 lang="en">Interface &amp; interaction</h3>
+            <h3 lang="de">Interface &amp; Interaktion</h3>
+            <p lang="en">
+              The interface sits on an e-ink display. When entering the room, a
+              touch wakes the display from standby: status bar and taskbar become
+              visible, and the heating activates simultaneously.
+            </p>
+            <p lang="de">
+              Das Interface sitzt auf einem E‑Ink Display. Beim Betreten des
+              Raums weckt eine Berührung das Display aus dem Standby: Statusleiste
+              und Taskleiste werden sichtbar, gleichzeitig aktiviert sich die
+              Heizung.
+            </p>
+            <p lang="en">
+              A taskbar provides access to sub-menus such as lighting or sound.
+              A rotary dial serves as a consistent control element across all
+              menus, for example for dimming lights or adjusting volume. A
+              separate admin panel is used to configure lights and scenes.
+            </p>
+            <p lang="de">
+              Über eine Taskleiste gelangt man in Untermenüs wie Licht oder Ton.
+              Ein Drehregler dient in allen Menüs als konsistentes
+              Bedienelement, zum Beispiel zum Dimmen des Lichts oder Regeln der
+              Lautstärke. Über ein separates Admin-Panel werden Leuchten und
+              Szenen konfiguriert.
+            </p>
+          </section>
+
+          <!-- 5 screen images: row on desktop, slider on mobile -->
+          <div class="raumsteuerung-carousel-wrap">
+            <div class="carousel" id="raum-carousel" role="region" aria-roledescription="carousel" aria-label="Interface screens" tabindex="0">
+              <div class="carousel-track" id="raum-carousel-track">
+                <div class="carousel-slide">
+                  <img src="../pictures-projects/raumsteuerung/raumsteuerung_slider-1.png" alt="Room controller screen 1" loading="lazy" />
+                  <p class="raum-caption" lang="en">The user enters the dark, unheated room and taps the display.</p>
+                  <p class="raum-caption" lang="de">Der Nutzer betritt den dunklen, unbeheizten Raum und tippt auf das Display.</p>
+                </div>
+                <div class="carousel-slide">
+                  <img src="../pictures-projects/raumsteuerung/raumsteuerung_slider-2.png" alt="Room controller screen 2" loading="lazy" />
+                  <p class="raum-caption" lang="en">The e-ink display lights up in various shades of grey. The status bar and taskbar become visible. Leaving standby mode activates the heating.</p>
+                  <p class="raum-caption" lang="de">Das E-Ink Display leuchtet in verschiedenen Graustufen auf. Die Statusleiste und Taskleiste werden sichtbar. Durch das Verlassen des Standby-Modus wird die Heizung aktiv.</p>
+                </div>
+                <div class="carousel-slide">
+                  <img src="../pictures-projects/raumsteuerung/raumsteuerung_slider-3.png" alt="Room controller screen 3" loading="lazy" />
+                  <p class="raum-caption" lang="en">The taskbar leads to sub-menus. In the lighting menu the rotary dial can be used to dim the lights. A separate admin panel is used to integrate luminaires into the menu.</p>
+                  <p class="raum-caption" lang="de">Über die Taskleiste kommt man in die Untermenüs. Im Lichtmenü kann über den Drehregler das Licht gedimmt werden. Über ein separates Adminpanel werden die Leuchten ins Menü integriert.</p>
+                </div>
+                <div class="carousel-slide">
+                  <img src="../pictures-projects/raumsteuerung/raumsteuerung_slider-4.png" alt="Room controller screen 4" loading="lazy" />
+                  <p class="raum-caption" lang="en">The other menus follow a similar structure.</p>
+                  <p class="raum-caption" lang="de">Die anderen Menüs sind ähnlich aufgebaut.</p>
+                </div>
+                <div class="carousel-slide">
+                  <img src="../pictures-projects/raumsteuerung/raumsteuerung_slider-5.png" alt="Room controller screen 5" loading="lazy" />
+                  <p class="raum-caption" lang="en">Here too the rotary dial can be used to adjust the volume.</p>
+                  <p class="raum-caption" lang="de">Auch hier kann der Drehregler wieder genutzt werden, um die Lautstärke zu regeln.</p>
+                </div>
+              </div>
+              <div class="carousel-nav">
+                <button class="carousel-btn carousel-btn--prev" id="raum-carousel-prev" type="button" aria-label="Previous slide">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <span class="carousel-counter"><span id="raum-carousel-current">1</span> / 5</span>
+                <button class="carousel-btn carousel-btn--next" id="raum-carousel-next" type="button" aria-label="Next slide">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <a href="../projects.html" class="back-link" lang="en">back to overview</a>
+          <a href="../projects.html" class="back-link" lang="de">zurück zur Übersicht</a>
+        </div>
+      </main>
+
+      <footer class="site-footer site-footer--home" id="contact">
+        <div class="footer-left">
+          <p class="footer-contact-label" lang="en">contact me:</p>
+          <p class="footer-contact-label" lang="de">kontakt:</p>
+          <a href="mailto:rafael.balle@outlook.de">rafael.balle@outlook.de</a>
+          <a href="tel:+491783767549">+49 178 3767549</a>
+          <a href="https://www.linkedin.com/in/rafael-balle/" target="_blank" rel="noreferrer">linkedin</a>
+        </div>
+        <div class="footer-right">
+          <a href="../impressum.html" lang="en">imprint</a>
+          <a href="../impressum.html" lang="de">impressum</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../theme.js"></script>
+    <script src="../lang.js"></script>
+    <script src="../cursor.js"></script>
+    <script>
+    (function () {
+      var track = document.getElementById("raum-carousel-track");
+      var counter = document.getElementById("raum-carousel-current");
+      var prev = document.getElementById("raum-carousel-prev");
+      var next = document.getElementById("raum-carousel-next");
+      var root = document.getElementById("raum-carousel");
+      if (!track || !counter || !prev || !next || !root) return;
+
+      var MQ = 860;
+      var total = track.children.length;
+      var idx = 0;
+
+      function isMobile() { return window.innerWidth <= MQ; }
+
+      function go(i) {
+        if (!isMobile()) return;
+        idx = (i % total + total) % total;
+        track.style.transform = "translateX(-" + idx * 100 + "%)";
+        counter.textContent = idx + 1;
+      }
+
+      function reset() {
+        if (!isMobile()) {
+          track.style.transform = "";
+          idx = 0;
+          counter.textContent = "1";
+        }
+      }
+
+      window.addEventListener("resize", reset);
+
+      prev.addEventListener("click", function () { go(idx - 1); });
+      next.addEventListener("click", function () { go(idx + 1); });
+
+      root.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowLeft") { go(idx - 1); }
+        if (e.key === "ArrowRight") { go(idx + 1); }
+      });
+
+      var startX = 0;
+      var dragging = false;
+      track.addEventListener("pointerdown", function (e) {
+        startX = e.clientX;
+        dragging = true;
+      });
+      document.addEventListener("pointerup", function (e) {
+        if (!dragging) return;
+        dragging = false;
+        var diff = e.clientX - startX;
+        if (Math.abs(diff) > 40) go(idx + (diff < 0 ? 1 : -1));
+      });
+    })();
+    </script>
+    <script src="../script.js"></script>
+  </body>
+</html>

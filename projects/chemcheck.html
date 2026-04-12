@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ChemCheck – Rafael Balle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ChemCheck – automated drug checking machine and interface by Rafael Balle."
+    />
+    <link rel="icon" href="../favico.svg" type="image/svg+xml" />
+    <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t){var m=document.cookie.match(/(?:^|;\s*)theme=(light|dark)/);if(m)t=m[1]}if(t)document.documentElement.setAttribute("data-theme",t);var l;try{l=localStorage.getItem("lang")}catch(e){}l=l||"en";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l})()</script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="page--home page--chemcheck">
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+    <div class="frame frame--home">
+      <header class="header header--home">
+        <nav class="nav">
+          <a href="../index.html" data-text="home">home</a>
+          <a href="../about.html" data-text="about">about</a>
+          <a href="../projects.html" data-text="projects" aria-current="page">projects</a>
+        </nav>
+        <div class="header-controls">
+          <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+            <span class="lang-opt" data-lang="de">de</span>
+            <span class="lang-sep">/</span>
+            <span class="lang-opt" data-lang="en">en</span>
+          </button>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18" fill="currentColor"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="detail detail--four-col detail--chemcheck">
+        <div class="detail-grid detail-grid--chemcheck-hero">
+          <div class="detail-lead-block">
+            <div class="detail-hero-stack">
+              <div class="detail-hero">
+                <h1 lang="en">ChemCheck</h1>
+                <h1 lang="de">ChemCheck</h1>
+                <h2 class="detail-h2" lang="en">automated drug checking</h2>
+                <h2 class="detail-h2" lang="de">automatisierter Drug Check</h2>
+              </div>
+              <div class="detail-intro-row">
+                <div class="detail-intro detail-intro--left">
+                  <h3 class="detail-label" lang="en">project</h3>
+                  <h3 class="detail-label" lang="de">projekt</h3>
+                  <ul class="detail-facts">
+                    <li lang="en">6th semester</li>
+                    <li lang="de">6. Semester</li>
+                    <li lang="en">product design</li>
+                    <li lang="de">Produktgestaltung</li>
+                    <li lang="en">development of a conceptual smarttool</li>
+                    <li lang="de">Entwicklung eines konzeptionellen Smarttools</li>
+                  </ul>
+                </div>
+                <div class="detail-intro detail-intro--right">
+                  <h3 class="detail-label" lang="en">team partners</h3>
+                  <h3 class="detail-label" lang="de">Teampartner</h3>
+                  <p class="detail-partners">
+                    <a href="https://www.linkedin.com/in/silas-wessle-419a0622a/" target="_blank" rel="noopener noreferrer">Silas Wessle</a>
+                    <br /> 
+                    <a href="https://www.linkedin.com/in/teresa-kahlenbach/" target="_blank" rel="noopener noreferrer">Teresa Kahlenbach</a>
+                  </p>
+                </div>
+              </div>
+              <div class="detail-project-role">
+                <h3 class="detail-label" lang="en">role in the project</h3>
+                <h3 class="detail-label" lang="de">Rolle im Projekt</h3>
+                <p class="detail-role-text" lang="en">
+                  My responsibilities were the housing concept, construction and renderings,
+                  as well as planning and building the physical model.
+                </p>
+                <p class="detail-role-text" lang="de">
+                  Meine Aufgaben waren die Konzeption des Gehäuses, Konstruktion und Renderings
+                  sowie die Planung und Umsetzung des Modellbaus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <figure class="detail-media detail-media--hero">
+            <img src="../pictures-projects/chemcheck/keyframe_final.webp" alt="ChemCheck keyframe rendering" />
+          </figure>
+        </div>
+
+        <div class="chemcheck-stats-scrollport" data-chemcheck-stats-scroll>
+        <section
+          class="chemcheck-stats-immersive chemcheck-stats-immersive--sticky"
+          aria-label="ChemCheck background statistics"
+        >
+          <div class="chemcheck-stats-immersive__backdrop" aria-hidden="true"></div>
+          <div class="chemcheck-stats-immersive__inner">
+            <h3 class="chemcheck-stats-immersive__title" lang="en">Background statistics</h3>
+            <h3 class="chemcheck-stats-immersive__title" lang="de">Hintergrundstatistiken</h3>
+            <div class="chemcheck-stats">
+              <div class="chemcheck-pills">
+                <div class="chemcheck-pill">
+                  <p lang="en">
+                    <strong>5.1 million residents</strong> aged <strong>18–64</strong> consumed
+                    <strong>illegal substances</strong> in <strong>Germany in 2023</strong>.<sup>1</sup>
+                  </p>
+                  <p lang="de">
+                    <strong>5.100.000 Bürger:innen</strong> im Alter <strong>zwischen 18–64 Jahren</strong>
+                    haben <strong>2023 in Deutschland illegale Substanzen konsumiert</strong>.<sup>1</sup>
+                  </p>
+                </div>
+                <div class="chemcheck-pill">
+                  <p lang="en">
+                    <strong>30–50%</strong> of drugs sold on the <strong>German black market</strong> are
+                    <strong>contaminated or overdosed</strong>.<sup>2</sup>
+                  </p>
+                  <p lang="de">
+                    <strong>30–50%</strong> der Drogen, die auf dem deutschen Schwarzmarkt verkauft werden,
+                    sind <strong>verunreinigt oder überdosiert</strong>.<sup>2</sup>
+                  </p>
+                </div>
+                <div class="chemcheck-pill">
+                  <p lang="en">
+                    <strong>2,000 deaths</strong> from contaminated or overdosed use.
+                    <strong>17,200 people</strong> required <strong>inpatient treatment</strong>.<sup>3</sup>
+                  </p>
+                  <p lang="de">
+                    <strong>2.000 Todesopfer</strong> durch verunreinigten oder überdosierten Konsum.
+                    <strong>17.200 Personen</strong> mussten <strong>stationär behandelt</strong> werden.<sup>3</sup>
+                  </p>
+                </div>
+                <div class="chemcheck-pill">
+                  <p lang="en">
+                    Up to <strong>7 days</strong> can pass in drug-checking labs before
+                    <strong>ingredients are analysed</strong> and <strong>feedback</strong> is given.<sup>4</sup>
+                  </p>
+                  <p lang="de">
+                    <strong>7 Tage</strong> kann es in den Laboren der Drug-Checking-Stellen dauern,
+                    die <strong>Inhaltsstoffe zu analysieren</strong> und eine <strong>Rückmeldung</strong> zu geben.<sup>4</sup>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+
+        <div class="detail-grid detail-grid--chemcheck-tail">
+          <section class="detail-body detail-body--chemcheck-tail">
+          <h3 lang="en">drug checking</h3>
+          <h3 lang="de">drug checking</h3>
+          <p lang="en">
+            In some European countries (Germany, Austria, the Netherlands,
+            Switzerland, Spain and France) there are contact points for
+            people with addictions and consumers where they can have their
+            substances tested. The laboratory methods used are very precise
+            but also time- and cost-intensive.
+          </p>
+          <p lang="de">
+            In einigen Europäischen Ländern (Deutschland, Österreich,
+            Niederlande, Schweiz, Spanien und Frankreich) gibt es
+            Anlaufstellen für Suchtkranke und Konsument:innen, an denen
+            sie ihre Substanzen prüfen lassen können. Die angewandten
+            Laborverfahren sind sehr genau, aber auch zeit- und
+            kostenintensiv.
+          </p>
+          <p lang="en">
+            In some countries the service is offered not only in public
+            consumption rooms but also at festivals. The goal of both
+            options is not only to enable safer consumption but also,
+            through testing substances, to educate consumers about risks
+            without stigmatising them.
+          </p>
+          <p lang="de">
+            In einigen Länder wird der Service nicht nur in öffentlichen
+            Konsumräumen, sondern auch auf Festivals angeboten. Das Ziel
+            beider Möglichkeiten ist es nicht nur den sicheren Konsum zu
+            ermöglichen, sondern auch durch das Testen von Substanzen, die
+            Konsument:innen über Gefahren aufzuklären, ohne sie zu
+            stigmatisieren.
+          </p>
+          <p lang="en">
+            Recording substances in a registry is the work of authorities.
+            Hospitals and the police can benefit from this data.
+          </p>
+          <p lang="de">
+            Die Erfassung der Substanzen in einem Register ist
+            Behördenarbeit. Krankenhäuser und die Polizei können von
+            diesen Daten profitieren.
+          </p>
+
+          <h3 lang="en">the ui</h3>
+          <h3 lang="de">das ui</h3>
+          <p lang="en">
+            The UI is designed to be easy to understand. It informs users
+            about the substances.
+          </p>
+          <p lang="de">
+            Das UI ist leicht verständlich aufgebaut. Es klärt über die
+            Substanzen auf.
+          </p>
+          <p lang="en">
+            The amount needed for testing is only small.
+          </p>
+          <p lang="de">
+            Die benötigte Menge zum prüfen ist nur gering.
+          </p>
+          <p lang="en">
+            The result is displayed immediately but can also be retrieved
+            via QR code. The device also offers the option to dispose of
+            samples safely on site.
+          </p>
+          <p lang="de">
+            Das Ergebnis wird zwar unmittelbar ausgegeben, kann aber via
+            QR-Code auch abgerufen werden. Das Gerät bietet ebenfalls an,
+            die Proben direkt sicher zu entsorgen.
+          </p>
+          </section>
+
+          <!-- 4 UI screenshots (full width, all 4 columns) -->
+          <div class="chemcheck-ui-row">
+            <figure class="chemcheck-ui-img">
+              <img src="../pictures-projects/chemcheck/ui_1.png" alt="ChemCheck UI – screen 1" />
+            </figure>
+            <figure class="chemcheck-ui-img">
+              <img src="../pictures-projects/chemcheck/ui_2.png" alt="ChemCheck UI – screen 2" />
+            </figure>
+            <figure class="chemcheck-ui-img">
+              <img src="../pictures-projects/chemcheck/ui_3.png" alt="ChemCheck UI – screen 3" />
+            </figure>
+            <figure class="chemcheck-ui-img chemcheck-ui-img--narrow">
+              <img src="../pictures-projects/chemcheck/ui_4.png" alt="ChemCheck UI – screen 4" />
+            </figure>
+          </div>
+
+          <section class="detail-body detail-body--chemcheck-tail">
+          <h3 lang="en">deployment areas &amp; scenarios</h3>
+          <h3 lang="de">einsatzgebiete &amp; szenarien</h3>
+          <ul class="detail-list" lang="en">
+            <li>Container with machines at a festival</li>
+            <li>Dashboard for authorities and institutions</li>
+            <li>ChemCheck Cell in bar and nightlife districts</li>
+          </ul>
+          <ul class="detail-list" lang="de">
+            <li>Container mit Automaten auf einem Festival</li>
+            <li>Dashboard für Behörden und Einrichtungen</li>
+            <li>ChemCeck Cell im Bar und Ausgeviertel</li>
+          </ul>
+          </section>
+
+          <!-- Package solution carousel (3 columns) -->
+          <div class="chemcheck-carousel-wrap">
+            <div class="carousel" id="chemcheck-carousel">
+              <div class="carousel-track" id="chemcheck-carousel-track">
+                <div class="carousel-slide"><img src="../pictures-projects/chemcheck/package_solution_1.jpg" alt="ChemCheck package solution 1" loading="lazy" /></div>
+                <div class="carousel-slide"><img src="../pictures-projects/chemcheck/package_solution_2.png" alt="ChemCheck package solution 2" loading="lazy" /></div>
+                <div class="carousel-slide"><img src="../pictures-projects/chemcheck/package_solution_3.png" alt="ChemCheck package solution 3" loading="lazy" /></div>
+              </div>
+              <div class="carousel-nav">
+                <button class="carousel-btn carousel-btn--prev" id="chemcheck-carousel-prev" aria-label="Previous">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <span class="carousel-counter"><span id="chemcheck-carousel-current">1</span> / 3</span>
+                <button class="carousel-btn carousel-btn--next" id="chemcheck-carousel-next" aria-label="Next">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <section class="detail-body detail-body--chemcheck-tail chemcheck-tail--sources">
+          <div class="chemcheck-sources chemcheck-sources--apa" lang="en">
+            <p class="chemcheck-sources-apa-heading">References</p>
+            <ol class="chemcheck-sources-apa-list">
+              <li class="chemcheck-ref">
+                Bundeskriminalamt. (n.d.). <i>Rauschgiftkriminalität: Statistiken und Lagebilder</i>.
+                Retrieved January 14, 2025, from
+                <a href="https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/Rauschgiftkriminalitaet/rauschgiftkriminalitaet_node.html" target="_blank" rel="noopener noreferrer">https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/Rauschgiftkriminalitaet/rauschgiftkriminalitaet_node.html</a>
+              </li>
+              <li class="chemcheck-ref">
+                Drogerieinformationszentrum Zürich. (n.d.). <i>Substanzen, Analysen und Warnungen</i> [Saferparty].
+                Retrieved January 14, 2025, from
+                <a href="https://saferparty.ch/substanzen-warnungen.html" target="_blank" rel="noopener noreferrer">https://saferparty.ch/substanzen-warnungen.html</a>
+              </li>
+              <li class="chemcheck-ref">
+                German Federal Government Commissioner on Narcotic Drugs. (n.d.). <i>Drogen- und Suchtbericht</i>.
+                Retrieved January 14, 2025, from
+                <a href="https://www.drogenbeauftragte.de/publikationen/drogen-und-suchtbericht.html" target="_blank" rel="noopener noreferrer">https://www.drogenbeauftragte.de/publikationen/drogen-und-suchtbericht.html</a>
+              </li>
+              <li class="chemcheck-ref">
+                Rundfunk Berlin-Brandenburg. (2023, August 7). <i>Berlin startet erstes kostenloses Drug Checking</i>. RBB24.
+                Retrieved January 14, 2025, from
+                <a href="https://www.rbb24.de/panorama/beitrag/2023/08/berlin-startet-erstes-kostenloses-drug-checking.html" target="_blank" rel="noopener noreferrer">https://www.rbb24.de/panorama/beitrag/2023/08/berlin-startet-erstes-kostenloses-drug-checking.html</a>
+              </li>
+            </ol>
+          </div>
+          <div class="chemcheck-sources chemcheck-sources--apa" lang="de">
+            <p class="chemcheck-sources-apa-heading">Literaturverzeichnis</p>
+            <ol class="chemcheck-sources-apa-list">
+              <li class="chemcheck-ref">
+                Beauftragte der Bundesregierung für Drogen und Sucht. (o. D.). <i>Drogen- und Suchtbericht</i>.
+                Abgerufen am 14. Januar 2025, von
+                <a href="https://www.drogenbeauftragte.de/publikationen/drogen-und-suchtbericht.html" target="_blank" rel="noopener noreferrer">https://www.drogenbeauftragte.de/publikationen/drogen-und-suchtbericht.html</a>
+              </li>
+              <li class="chemcheck-ref">
+                Bundeskriminalamt. (o. D.). <i>Rauschgiftkriminalität: Statistiken und Lagebilder</i>.
+                Abgerufen am 14. Januar 2025, von
+                <a href="https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/Rauschgiftkriminalitaet/rauschgiftkriminalitaet_node.html" target="_blank" rel="noopener noreferrer">https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/Rauschgiftkriminalitaet/rauschgiftkriminalitaet_node.html</a>
+              </li>
+              <li class="chemcheck-ref">
+                Drogerieinformationszentrum Zürich. (o. D.). <i>Substanzen, Analysen und Warnungen</i> [Saferparty].
+                Abgerufen am 14. Januar 2025, von
+                <a href="https://saferparty.ch/substanzen-warnungen.html" target="_blank" rel="noopener noreferrer">https://saferparty.ch/substanzen-warnungen.html</a>
+              </li>
+              <li class="chemcheck-ref">
+                Rundfunk Berlin-Brandenburg. (2023, 7. August). <i>Berlin startet erstes kostenloses Drug Checking</i>. RBB24.
+                Abgerufen am 14. Januar 2025, von
+                <a href="https://www.rbb24.de/panorama/beitrag/2023/08/berlin-startet-erstes-kostenloses-drug-checking.html" target="_blank" rel="noopener noreferrer">https://www.rbb24.de/panorama/beitrag/2023/08/berlin-startet-erstes-kostenloses-drug-checking.html</a>
+              </li>
+            </ol>
+          </div>
+
+          <a href="../projects.html" class="back-link" lang="en">back to overview</a>
+          <a href="../projects.html" class="back-link" lang="de">zurück zur Übersicht</a>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer site-footer--home" id="contact">
+        <div class="footer-left">
+          <p class="footer-contact-label" lang="en">contact me:</p>
+          <p class="footer-contact-label" lang="de">kontakt:</p>
+          <a href="mailto:rafael.balle@outlook.de">rafael.balle@outlook.de</a>
+          <a href="tel:+491783767549">+49 178 3767549</a>
+          <a href="https://www.linkedin.com/in/rafael-balle/" target="_blank" rel="noreferrer">linkedin</a>
+        </div>
+        <div class="footer-right">
+          <a href="../impressum.html" lang="en">imprint</a>
+          <a href="../impressum.html" lang="de">impressum</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../theme.js"></script>
+    <script src="../lang.js"></script>
+    <script src="../cursor.js"></script>
+    <script src="../script.js"></script>
+    <script src="../chemcheck-stats-scroll.js"></script>
+    <script>
+    (function () {
+      var track = document.getElementById("chemcheck-carousel-track");
+      var counter = document.getElementById("chemcheck-carousel-current");
+      var prev = document.getElementById("chemcheck-carousel-prev");
+      var next = document.getElementById("chemcheck-carousel-next");
+      if (!track) return;
+
+      var total = track.children.length;
+      var idx = 0;
+
+      function go(i) {
+        idx = (i % total + total) % total;
+        track.style.transform = "translateX(-" + (idx * 100) + "%)";
+        counter.textContent = idx + 1;
+      }
+
+      prev.addEventListener("click", function () { go(idx - 1); });
+      next.addEventListener("click", function () { go(idx + 1); });
+
+      var startX = 0;
+      var dragging = false;
+      track.addEventListener("pointerdown", function (e) {
+        startX = e.clientX;
+        dragging = true;
+      });
+      document.addEventListener("pointerup", function (e) {
+        if (!dragging) return;
+        dragging = false;
+        var diff = e.clientX - startX;
+        if (Math.abs(diff) > 40) go(idx + (diff < 0 ? 1 : -1));
+      });
+    })();
+    </script>
+  </body>
+</html>

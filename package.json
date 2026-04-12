@@ -1,0 +1,13 @@
+{
+  "name": "rafael-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal portfolio website for Rafael Balle.",
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve ."
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
+

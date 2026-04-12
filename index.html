@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>rafael balle – portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="portfolio of rafael balle – industrial designer and eco-social designer"
+    />
+    <link rel="icon" href="./favico.svg" type="image/svg+xml" />
+    <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t){var m=document.cookie.match(/(?:^|;\s*)theme=(light|dark)/);if(m)t=m[1]}if(t)document.documentElement.setAttribute("data-theme",t);var l;try{l=localStorage.getItem("lang")}catch(e){}l=l||"en";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l})()</script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page--home">
+
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+    <div class="frame frame--home">
+
+      <header class="header header--home">
+        <nav class="nav">
+          <a href="./index.html" data-text="home" aria-current="page">home</a>
+          <a href="./about.html" data-text="about">about</a>
+          <a href="./projects.html" data-text="projects">projects</a>
+        </nav>
+        <div class="header-controls">
+          <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+            <span class="lang-opt" data-lang="de">de</span>
+            <span class="lang-sep">/</span>
+            <span class="lang-opt" data-lang="en">en</span>
+          </button>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18" fill="currentColor"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="home-main home-main--split">
+
+        <section class="intro intro--home intro--home-col" id="main">
+          <h1 id="intro-heading" lang="en">
+            <span class="intro-line">hey, i'm rafael</span><br />
+            <span class="intro-line">and i'm studying</span><br />
+            <span class="intro-line">eco-social design</span><br />
+            <span class="intro-line">in lucerne.</span>
+          </h1>
+          <h1 id="intro-heading-de" lang="de">
+            <span class="intro-line">hey, ich bin rafael</span><br />
+            <span class="intro-line">und ich studiere</span><br />
+            <span class="intro-line">eco-social design</span><br />
+            <span class="intro-line">in luzern.</span>
+          </h1>
+          <p class="intro-desc" lang="en">
+            i apply a planetary-centric<br />
+            view on product innovation.<br />
+            i want to be part of the<br />
+            eco-social transformation.
+          </p>
+          <p class="intro-desc" lang="de">
+            ich wende eine planetenzentrierte <br />
+            sichtweise auf produktinnovation an. <br />
+            ich möchte teil des <br />
+            öko-sozialen wandels sein. <br />
+          </p>
+          <a href="./projects.html" class="btn-pill" lang="en">browse projects</a>
+          <a href="./projects.html" class="btn-pill" lang="de">jetzt projekte anschauen</a>
+        </section>
+
+        <div class="home-carousel-col">
+          <div
+            class="carousel home-carousel"
+            id="home-carousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Portfolio"
+            tabindex="0"
+          >
+            <div class="carousel-track" id="home-carousel-track">
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home1.jpg" alt="" loading="eager" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en">Elevator Pitch</p>
+                  <p class="home-carousel-caption" lang="de">Elevator Pitch</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home2.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en">Transformative object: small to large</p>
+                  <p class="home-carousel-caption" lang="de">Transformatives Objekt: klein zu groß</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home3.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/9EnsFxvhxBRKyZFg9">Heubach</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/9EnsFxvhxBRKyZFg9">Heubach</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home4.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/pSyiPv9uyLbrfhhW7">Prater, Vienna </p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/pSyiPv9uyLbrfhhW7">Wien Prater</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home5.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/BCos6jaMqqgyNjxz5">Danube, Serbia</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/BCos6jaMqqgyNjxz5">Serbien Donau</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home6.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/RPBkBeTF8ShNmJM28">Buzludzha, Bulgaria</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/RPBkBeTF8ShNmJM28">Buzludzha Bulgarien</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home7.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/yRwABA7joCsRCdEH9">Bulgaria, steppe</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/yRwABA7joCsRCdEH9">Bulgarien Steppe</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home8.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/HZzL5nN75eMYrSX69">Istanbul, Turkey</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/HZzL5nN75eMYrSX69">Türkei Istanbul</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home9.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/y4u1ZdNh5sSCgXVq5">Eastern Turkey, Erzincan</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/y4u1ZdNh5sSCgXVq5">Osttürkei Erzincan</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home10.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/AQfhvfB6zW1xRpUz6">Eastern Turkey, Erzincan</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/AQfhvfB6zW1xRpUz6">Osttürkei Erzincan</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home11.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/FKYKzMU76QhnJ8fQ7">Eastern Turkey, Gümüşhane</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/FKYKzMU76QhnJ8fQ7">Osttürkei Gümüşhane</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home12.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/xS6D9HZaW1HnpkNS7">Eastern Turkey, Gümüşhane</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/xS6D9HZaW1HnpkNS7">Osttürkei Gümüşhane</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home13.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/WeAaZLDoTLBq7cQE8">Georgia, Goderdzi Pass</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/WeAaZLDoTLBq7cQE8">Georgien Goderdzi Pass</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home14.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/isbpstt55NYBKgZG7">Georgia, Tbilisi</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/isbpstt55NYBKgZG7">Georgien Tiblisi</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home15.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/9CQwSkP7HW4Et5Zy5">Georgia, Tbilisi</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/9CQwSkP7HW4Et5Zy5">Georgien Tiblisi</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home16.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/dpjCWnomeEC3B7U38">Georgia, Kvemo Kartli</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/dpjCWnomeEC3B7U38">Georgien Kvemo Kartli</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home17.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/Qfc6eQRzG7pnfucV6">Georgia, Kvemo Kartli</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/Qfc6eQRzG7pnfucV6">Georgien Kvemo Kartli</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home18.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/mQqjhR65hYTLKQk18">Switzerland, Bürgenstock</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/mQqjhR65hYTLKQk18">Schweiz Bürgenstock</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home19.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/5dDpPqtyCKbssk9M9">Switzerland, Sörenberg</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/5dDpPqtyCKbssk9M9">Schweiz Sörenberg</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home20.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/5dDpPqtyCKbssk9M9">Switzerland, Sörenberg</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/5dDpPqtyCKbssk9M9">Schweiz Sörenberg</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home21.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/JZWYCTpP11hLZ73c7">Switzerland, Sörenberg</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/JZWYCTpP11hLZ73c7">Schweiz Sörenberg</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home22.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/whmuDsNrGbuoRPhg6">Italy, Matera</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/whmuDsNrGbuoRPhg6">Italien Matera</p>
+                </div>
+              </div>
+              <div class="carousel-slide home-carousel-slide">
+                <div class="home-carousel-frame">
+                  <img src="./pictures-projects/slider-index/slider-home23.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="home-carousel-captions">
+                  <p class="home-carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/ssVLwh1YPs1t3X3K9">Italy, Matera</p>
+                  <p class="home-carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/ssVLwh1YPs1t3X3K9">Italien Matera</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <button class="carousel-btn carousel-btn--prev" id="home-carousel-prev" type="button" aria-label="Previous slide">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <span class="carousel-counter" id="home-carousel-counter">1 / 23</span>
+              <button class="carousel-btn carousel-btn--next" id="home-carousel-next" type="button" aria-label="Next slide">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer site-footer--home" id="contact">
+        <div class="footer-left">
+          <p class="footer-contact-label" lang="en">contact me:</p>
+          <p class="footer-contact-label" lang="de">kontakt:</p>
+          <a href="mailto:rafael.balle@outlook.de">rafael.balle@outlook.de</a>
+          <a href="tel:+491783767549">+49 178 3767549</a>
+          <a
+            href="https://www.linkedin.com/in/rafael-balle/"
+            target="_blank"
+            rel="noreferrer"
+            >linkedin</a
+          >
+        </div>
+        <div class="footer-right">
+          <a href="./impressum.html" lang="en">imprint</a>
+          <a href="./impressum.html" lang="de">impressum</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./theme.js"></script>
+    <script src="./lang.js"></script>
+    <script src="./cursor.js"></script>
+    <script src="./script.js"></script>
+    <script src="./home-carousel.js"></script>
+  </body>
+</html>
