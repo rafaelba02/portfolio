@@ -1261,9 +1261,24 @@ p {
 }
 
 .back-link {
-  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  padding: 0.55em 1.6em;
+  border: 1.5px solid var(--fg);
+  border-radius: 999px;
   color: var(--fg);
   text-decoration: none;
+  font-size: var(--fs-nav);
+  white-space: nowrap;
+  width: fit-content;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.back-link:hover {
+  color: var(--line);
+  border-color: var(--line);
 }
 
 .site-footer {
@@ -1655,6 +1670,27 @@ a.home-carousel-caption-link:focus-visible {
 
 .site-footer--home {
   padding-top: 48px;
+}
+
+/* —— Photography page —— */
+
+.detail-grid--photos {
+  row-gap: var(--detail-grid-row-gap);
+}
+
+.detail-grid--photos .detail-hero {
+  grid-column: 1 / -1;
+}
+
+.detail-grid--photos .detail-body--photos {
+  grid-column: 1 / 4;
+  min-width: 0;
+}
+
+@media (max-width: 860px) {
+  .detail-grid--photos .detail-body--photos {
+    grid-column: 1;
+  }
 }
 
 /* —— Image carousel —— */
