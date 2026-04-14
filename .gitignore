@@ -6,6 +6,9 @@
 _backup_v1/
 _backup_v2/
 
+# Design
+figma-prototype/
+
 # Editor
 .cursor/
 
