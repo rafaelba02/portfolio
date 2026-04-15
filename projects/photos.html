@@ -2,8 +2,9 @@
 <html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Photos – Rafael Balle</title>
+    <title>photos | rafael balle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta
       name="description"
       content="Photography by Rafael Balle."
@@ -11,6 +12,12 @@
     <link rel="icon" href="../favico.svg" type="image/svg+xml" />
     <script>(function(){var l;try{l=localStorage.getItem("lang")}catch(e){}l=l||"en";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l})()</script>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
   </head>
   <body class="page--home">
     <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
@@ -38,30 +45,168 @@
           </div>
 
           <section class="detail-body detail-body--photos">
+            <div class="photos-layout">
             <div class="carousel" id="photo-carousel">
               <div class="carousel-track" id="carousel-track">
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__1.png" alt="Photo 1" loading="eager" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__2.png" alt="Photo 2" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__3.png" alt="Photo 3" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__4.png" alt="Photo 4" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__5.png" alt="Photo 5" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__6.png" alt="Photo 6" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__7.png" alt="Photo 7" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__8.png" alt="Photo 8" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__9.png" alt="Photo 9" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__10.png" alt="Photo 10" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__11.png" alt="Photo 11" loading="lazy" /></div>
-                <div class="carousel-slide"><img src="../assets/images/photography/carousell__12.png" alt="Photo 12" loading="lazy" /></div>
+                <div class="carousel-slide" data-map-lat="48.7889234" data-map-lng="9.9439748">
+                  <img src="../assets/images/photography/photography_1.jpg" alt="Heubach" loading="eager" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/9EnsFxvhxBRKyZFg9">Heubach</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/9EnsFxvhxBRKyZFg9">Heubach</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="48.2145278" data-map-lng="16.401401">
+                  <img src="../assets/images/photography/photography_2.jpg" alt="Prater, Vienna" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/pSyiPv9uyLbrfhhW7">Prater</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/pSyiPv9uyLbrfhhW7">Prater</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="44.462896" data-map-lng="22.183826">
+                  <img src="../assets/images/photography/photography_3.jpg" alt="Danube, Serbia" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/BCos6jaMqqgyNjxz5">Danube, Serbia</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/BCos6jaMqqgyNjxz5">Serbien Donau</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="42.731913" data-map-lng="25.3878898">
+                  <img src="../assets/images/photography/photography_4.jpg" alt="Buzludzha, Bulgaria" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/RPBkBeTF8ShNmJM28">Buzludzha, Bulgaria</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/RPBkBeTF8ShNmJM28">Buzludzha Bulgarien</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="42.3108662" data-map-lng="26.2491076">
+                  <img src="../assets/images/photography/photography_5.jpg" alt="Bulgaria, steppe" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/yRwABA7joCsRCdEH9">Bulgaria, steppe</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/yRwABA7joCsRCdEH9">Bulgarien Steppe</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="41.006225" data-map-lng="28.972203">
+                  <img src="../assets/images/photography/photography_6.jpg" alt="Istanbul, Turkey" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/HZzL5nN75eMYrSX69">Istanbul, Turkey</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/HZzL5nN75eMYrSX69">Türkei Istanbul</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="39.47227" data-map-lng="38.557194">
+                  <img src="../assets/images/photography/photography_7.jpg" alt="Eastern Turkey, Erzincan" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/y4u1ZdNh5sSCgXVq5">Eastern Turkey, Erzincan</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/y4u1ZdNh5sSCgXVq5">Osttürkei Erzincan</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="39.862957" data-map-lng="39.351959">
+                  <img src="../assets/images/photography/photography_8.jpg" alt="Eastern Turkey, Erzincan" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/AQfhvfB6zW1xRpUz6">Eastern Turkey, Erzincan</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/AQfhvfB6zW1xRpUz6">Osttürkei Erzincan</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="39.894479" data-map-lng="39.381177">
+                  <img src="../assets/images/photography/photography_9.jpg" alt="Eastern Turkey, Gümüşhane" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/FKYKzMU76QhnJ8fQ7">Eastern Turkey, Gümüşhane</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/FKYKzMU76QhnJ8fQ7">Osttürkei Gümüşhane</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="40.445654" data-map-lng="39.762834">
+                  <img src="../assets/images/photography/photography_10.jpg" alt="Eastern Turkey, Gümüşhane" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/xS6D9HZaW1HnpkNS7">Eastern Turkey, Gümüşhane</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/xS6D9HZaW1HnpkNS7">Osttürkei Gümüşhane</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="41.6326698" data-map-lng="42.510263">
+                  <img src="../assets/images/photography/photography_11.jpg" alt="Georgia, Goderdzi Pass" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/WeAaZLDoTLBq7cQE8">Georgia, Goderdzi Pass</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/WeAaZLDoTLBq7cQE8">Georgien Goderdzi Pass</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="41.696746" data-map-lng="44.807025">
+                  <img src="../assets/images/photography/photography_12.jpg" alt="Georgia, Tbilisi" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/isbpstt55NYBKgZG7">Georgia, Tbilisi</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/isbpstt55NYBKgZG7">Georgien, Tbilisi</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="41.7100409" data-map-lng="44.8032181">
+                  <img src="../assets/images/photography/photography_13.jpg" alt="Georgia, Tbilisi" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/9CQwSkP7HW4Et5Zy5">Georgia, Tbilisi</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/9CQwSkP7HW4Et5Zy5">Georgien, Tbilisi</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="41.5121306" data-map-lng="45.2926556">
+                  <img src="../assets/images/photography/photography_14.jpg" alt="Georgia, Kvemo Kartli" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/dpjCWnomeEC3B7U38">Georgia, Kvemo Kartli</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/dpjCWnomeEC3B7U38">Georgien Kvemo Kartli</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="41.4947401" data-map-lng="45.2926208">
+                  <img src="../assets/images/photography/photography_15.jpg" alt="Georgia, Kvemo Kartli" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/Qfc6eQRzG7pnfucV6">Georgia, Kvemo Kartli</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/Qfc6eQRzG7pnfucV6">Georgien Kvemo Kartli</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="46.999764" data-map-lng="8.404217">
+                  <img src="../assets/images/photography/photography_16.jpg" alt="Switzerland, Bürgenstock" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/mQqjhR65hYTLKQk18">Bürgenstock</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/mQqjhR65hYTLKQk18">Bürgenstock</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="46.816479" data-map-lng="8.063273">
+                  <img src="../assets/images/photography/photography_17.jpg" alt="Entlebuch" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/m5SiMhgajsZJqDgGA">Entlebuch</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/m5SiMhgajsZJqDgGA">Entlebuch</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="46.817267" data-map-lng="8.067802">
+                  <img src="../assets/images/photography/photography_18.jpg" alt="Entlebuch" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/f5BMexw3YQeCD8Ee8">Entlebuch</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/f5BMexw3YQeCD8Ee8">Entlebuch</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="46.810719" data-map-lng="8.07864">
+                  <img src="../assets/images/photography/photography_19.jpg" alt="Entlebuch" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/sqEZK3JgWLd4v7FX6">Entlebuch</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/sqEZK3JgWLd4v7FX6">Entlebuch</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="40.667244" data-map-lng="16.612917">
+                  <img src="../assets/images/photography/photography_20.jpg" alt="Italy, Matera" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/whmuDsNrGbuoRPhg6">Matera</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/whmuDsNrGbuoRPhg6">Matera</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="40.664747" data-map-lng="16.615847">
+                  <img src="../assets/images/photography/photography_21.jpg" alt="Italy, Matera" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/ssVLwh1YPs1t3X3K9">Matera</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/ssVLwh1YPs1t3X3K9">Matera</p>
+                </div>
+                <div class="carousel-slide">
+                  <img src="../assets/images/photography/photography_22.jpg" alt="Elevator Pitch at Halloween party" loading="lazy" />
+                  <p class="carousel-caption" lang="en">Elevator Pitch at Halloween party</p>
+                  <p class="carousel-caption" lang="de">Elevator Pitch auf der Halloweenparty</p>
+                </div>
+                <div class="carousel-slide">
+                  <img src="../assets/images/photography/photography_28.png" alt="Winter Plant" loading="lazy" />
+                  <p class="carousel-caption" lang="en">Winter Plant</p>
+                  <p class="carousel-caption" lang="de">Winterpflanze</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="48.8338065" data-map-lng="9.3794507">
+                  <img src="../assets/images/photography/photography_30.png" alt="Fire breather" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/ytR18HnLZALZJQwJ7">Feuerspucker</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/ytR18HnLZALZJQwJ7">Feuerspucker</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="48.5854104" data-map-lng="7.7347378">
+                  <img src="../assets/images/photography/photography_31.png" alt="Lamp" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/vkZ7Rup3GgZcTGr1A">Leuchte</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/vkZ7Rup3GgZcTGr1A">Leuchte</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="48.7602088" data-map-lng="8.2369633">
+                  <img src="../assets/images/photography/photography_32.png" alt="Lamp" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/9eozZzPDs7zmHs24A">Leuchte</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/9eozZzPDs7zmHs24A">Leuchte</p>
+                </div>
+                <div class="carousel-slide" data-map-lat="48.7943992" data-map-lng="9.8284269">
+                  <img src="../assets/images/photography/photography_33.png" alt="Silverplated Deer" loading="lazy" />
+                  <p class="carousel-caption" lang="en" data-map-url="https://maps.app.goo.gl/9JTZgnPmohNFdsqf6">Silverplated Deer</p>
+                  <p class="carousel-caption" lang="de" data-map-url="https://maps.app.goo.gl/9JTZgnPmohNFdsqf6">Versilberter Hirsch</p>
+                </div>
               </div>
               <div class="carousel-nav">
                 <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Previous">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
                 </button>
-                <span class="carousel-counter"><span id="carousel-current">1</span> / 12</span>
+                <span class="carousel-counter" id="carousel-current">1 / 27</span>
                 <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Next">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
                 </button>
               </div>
+            </div>
+
+            <div class="photos-minimap-aside">
+              <div
+                id="photos-minimap"
+                class="photos-minimap"
+                role="application"
+                aria-label="Map of photo locations"
+                lang="en"
+              ></div>
+              <p class="photos-minimap-attribution">
+                <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OSM</a>
+              </p>
+            </div>
             </div>
 
             <a href="../projects.html" class="back-link" lang="en">back to overview</a>
@@ -86,6 +231,8 @@
           <a href="../impressum.html" lang="de">impressum</a>
           <a href="../datenschutz.html" lang="en">privacy policy</a>
           <a href="../datenschutz.html" lang="de">datenschutz</a>
+          <p class="footer-updated" lang="en">last updated: april 15, 2026</p>
+          <p class="footer-updated" lang="de">letztes update: 15. april 2026</p>
         </div>
       </footer>
     </div>
@@ -93,6 +240,12 @@
     <script src="../js/lang.js"></script>
     <script src="../js/cursor.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/photos-carousel-maps.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <script>
     (function () {
       var track = document.getElementById("carousel-track");
@@ -104,11 +257,21 @@
       var total = track.children.length;
       var idx = 0;
       var autoTimer;
+      var indexListeners = [];
+
+      function notifyIndex() {
+        for (var i = 0; i < indexListeners.length; i++) {
+          try {
+            indexListeners[i](idx);
+          } catch (err) {}
+        }
+      }
 
       function go(i) {
         idx = (i % total + total) % total;
         track.style.transform = "translateX(-" + (idx * 100) + "%)";
-        counter.textContent = idx + 1;
+        counter.textContent = idx + 1 + " / " + total;
+        notifyIndex();
       }
 
       function resetAuto() {
@@ -137,9 +300,29 @@
         if (Math.abs(diff) > 40) { go(idx + (diff < 0 ? 1 : -1)); resetAuto(); }
       });
 
+      window.photoCarouselApi = {
+        go: function (i) {
+          go(i);
+          resetAuto();
+        },
+        getIndex: function () {
+          return idx;
+        },
+        subscribeIndex: function (fn) {
+          if (typeof fn !== "function") return function () {};
+          indexListeners.push(fn);
+          return function () {
+            var j = indexListeners.indexOf(fn);
+            if (j !== -1) indexListeners.splice(j, 1);
+          };
+        }
+      };
+
       resetAuto();
+      notifyIndex();
     })();
     </script>
+    <script src="../js/photos-minimap.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
   </body>

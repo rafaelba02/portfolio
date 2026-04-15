@@ -62,14 +62,20 @@
       currentY = mouseY;
       overlay.style.transform = "translate(" + (currentX - halfW) + "px," + (currentY - halfH) + "px)";
       overlay.classList.add("is-visible");
-      if (cursorDot) cursorDot.classList.add("cursor-dot--blend");
+      if (cursorDot) {
+        cursorDot.classList.add("cursor-dot--blend");
+        cursorDot.classList.add("cursor-dot--outline");
+      }
       visible = true;
       startLoop();
     });
 
     card.addEventListener("mouseleave", function () {
       overlay.classList.remove("is-visible");
-      if (cursorDot) cursorDot.classList.remove("cursor-dot--blend");
+      if (cursorDot) {
+        cursorDot.classList.remove("cursor-dot--blend");
+        cursorDot.classList.remove("cursor-dot--outline");
+      }
       visible = false;
       stopLoop();
     });

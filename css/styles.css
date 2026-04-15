@@ -1497,6 +1497,15 @@ p {
   text-decoration: underline;
 }
 
+.footer-updated {
+  margin: 8px 0 0;
+  padding: 0;
+  font-size: var(--fs-footer);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--muted);
+}
+
 /* —— Custom cursor —— */
 
 /* the blue dot that replaces the OS cursor */
@@ -1514,12 +1523,17 @@ p {
   background: var(--line);
   pointer-events: none;
   z-index: 9999;
-  transition: width 0.3s ease, height 0.3s ease, margin 0.3s ease, opacity 0.2s ease;
+  transition: width 0.3s ease, height 0.3s ease, margin 0.3s ease, opacity 0.2s ease, background 0.3s ease, border 0.3s ease;
   will-change: transform;
 }
 
 .cursor-dot--blend {
   mix-blend-mode: overlay;
+}
+
+.cursor-dot--outline {
+  background: transparent;
+  border: 2px solid var(--line);
 }
 
 /* big dot while the cursor is moving */
@@ -1825,14 +1839,100 @@ a.home-carousel-caption-link:focus-visible {
 }
 
 .detail-grid--photos .detail-body--photos {
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   min-width: 0;
+}
+
+.photos-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(20px, 3vw, 48px);
+  align-items: start;
+  width: 100%;
+}
+
+.photos-layout .carousel {
+  min-width: 0;
+}
+
+.photos-minimap-aside {
+  position: sticky;
+  top: clamp(12px, 3vh, 28px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: min(132px, 16vw);
+  min-width: 112px;
+  justify-self: end;
+  flex-shrink: 0;
+}
+
+.photos-minimap {
+  width: 100%;
+  aspect-ratio: 1;
+  max-height: min(200px, 28vh);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 0.75px solid rgba(17, 17, 17, 0.1);
+  background: var(--bg);
+  z-index: 1;
+}
+
+.photos-minimap .leaflet-control-container a {
+  cursor: pointer;
+}
+
+.photos-minimap-attribution {
+  margin: 0;
+  padding: 0 1px;
+  font-size: 8px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: right;
+}
+
+.photos-minimap-attribution a {
+  color: var(--muted);
+  opacity: 0.42;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.photos-minimap-attribution a:hover {
+  opacity: 0.65;
 }
 
 @media (max-width: 860px) {
   .detail-grid--photos .detail-body--photos {
     grid-column: 1;
   }
+
+  .photos-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .photos-minimap-aside {
+    position: relative;
+    top: auto;
+    width: 100%;
+    max-width: 200px;
+    min-width: 0;
+    justify-self: start;
+  }
+
+  .photos-minimap {
+    max-height: 200px;
+  }
+
+  .photos-minimap-attribution {
+    text-align: left;
+  }
+}
+
+/* Photos page: all images fill a fixed 3:2 frame (cropped, not stretched) */
+.detail-body--photos .carousel-slide img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
 }
 
 /* —— Image carousel —— */
@@ -1862,6 +1962,15 @@ a.home-carousel-caption-link:focus-visible {
   border-radius: 6px;
   -webkit-user-drag: none;
   user-select: none;
+}
+
+.carousel-caption {
+  margin: 6px 0 0;
+  font-size: var(--fs-footer);
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--muted);
+  letter-spacing: 0.02em;
 }
 
 .carousel-nav {
